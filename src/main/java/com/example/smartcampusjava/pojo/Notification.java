@@ -1,10 +1,14 @@
 package com.example.smartcampusjava.pojo;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class Notification {
     private int id;
     private boolean isRead;
+    private Integer type;
     private String title;
     private String unit;
     private String content;
